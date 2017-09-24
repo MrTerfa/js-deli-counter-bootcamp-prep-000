@@ -26,7 +26,8 @@ var currentLine = function(katzDeliLine){
   }
   else{
     for(var i = 0; i < katzDeliLine.length; i++){
-      var newLine.push(` `+[i+1]+`. `  + katzDeliLine[i])
+      var newLine = []
+      newLine.push(` `+[i+1]+`. `  + katzDeliLine[i])
     }
     return newLine;
   }
