@@ -27,8 +27,8 @@ var currentLine = function(katzDeliLine){
   }
   else{
     for(var i = 0; i < katzDeliLine.length; i++){
-      newLine.push(`This line is currently: `+[i+1]+`. `  + katzDeliLine[i])
+      newLine.push(` `+[i+1]+`. `  + katzDeliLine[i])
     }
-    return newLine;
+    return `The line is currently:`newLine;
   }
 }
