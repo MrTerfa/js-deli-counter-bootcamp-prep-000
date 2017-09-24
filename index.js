@@ -19,3 +19,15 @@ var nowServing = function(katzDeliLine){
     }
   }
 }
+
+var currentLine = function(katzDeliLine){
+  if (katzDeliLine.length <= 0) {
+    return "The line is currently empty."
+  }
+  else{
+    for(var i = 0; i < katzDeliLine.length; i++){
+      katzDeliLine += "This line is currently:" + parseInt(i + 1) + "." + katzDeliLine[i]
+    }
+    return katzDeliLine;
+  }
+}
